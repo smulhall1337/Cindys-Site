@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Ngo it all</title>
+  </head>
+  <body bgcolor="white">
+    <center><h1>This is cindys site. Theres nothing here....yet</h1></center>
+    <p><font face="verdana" size="2">This is my first paragraph. This one will be font size 2 and use a
+	Verdana font. <b>This sentence will be bold.</B></font></p>
+    <p><font color="blue">This is my second paragraph. This one will be in all blue. <i>This sentence will be
+	  in italics.</I></font></p>
+    <p>This is my third paragraph.<br>
+      But, I want this on a separate line.</p>
+  </body>
+</html> 

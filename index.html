@@ -10,13 +10,14 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		<script src="./assets/js/bootstrap.min.js"></script>
 		<!-- wow.js stuff -->
-		<script src="/assets/js/wow/wow.min.js"></script>
-		<link rel ="stylesheet" type="text/css" href="/assets/css/animate.css"/>
+		<script src="./assets/js/wow/wow.min.js"></script>
+		<link rel ="stylesheet" type="text/css" href="./assets/css/animate.css"/>
 		<script>new WOW().init();</script>
 	</head>
 	<body bgcolor="white">
 
 		<!-- top nav bar -->
+		<div class = "bio wow fadeIn" data-wow-duration="4s"> 
 		<div class="topnav" id="myTopnav">
 			<a href="#home">Home</a>
 			<a href="#news">News</a>
@@ -24,13 +25,8 @@
 			<a href="#About">Whatever</a>
 		</div>
 
-		                        <div class = "wow rotateIn"
-                                 data-wow-duration = ".3s" data-wow-iteration = "10000">
-
-
 		<!-- header -->
-		<div class = "container-fluid">
-			<center><h1>This is cindys site. Theres nothing here....yet</h1></center>
+			<center><h1>Cindy Ngos it all</h1></center>
 		</div>
 		<!-- /header -->
 
@@ -49,10 +45,12 @@
 
 		<!-- showoff -->
 		<!-- TODO: look into CSS image gallaries -->
+		<!-- cindy ngo's it all title-->
+		<!-- slide show with bio on top. -->
 		<div class = "bg-1"> 
 			<div class = "container-fluid text-center">
 				<p><font face = "helvetica" size = "18">Here you can show off some pictures of places. maybe have something like "we specialize in blah blah blah..."</font></p>
-				<img src="/assets/images/tech.jpg" class = "img-circle" alt = "tech"  width="350" height="350">
+				<img src="./assets/images/tech.jpg" class = "img-circle" alt = "tech"  width="350" height="350">
 				<div class="row">
 					<div class="col-sm-4">a grid for pictures</div>
 					<div class="col-sm-4">this can have more </div>
@@ -82,24 +80,24 @@
 				</p>
 				<div class = "responsive">
 					<div class = "gallery">
-						<a target="_blank" href = "/assets/images/falcon.jpg">
-							<img src ="/assets/images/falcon.jpg" alt = "F-16 Falcon" width = "300" height = "200">
+						<a target="_blank" href = "./assets/images/falcon.jpg">
+							<img src ="./assets/images/falcon.jpg" alt = "F-16 Falcon" width = "300" height = "200">
 						</a>
 						<div class "desc"><font color = "black">An F16 falcon, sick</font></div>
 					</div>
 				</div>
 
 				<div class = "gallery">
-					<a target="_blank" href = "/assets/images/warthog.jpg">
-						<img src ="/assets/images/warthog.jpg" alt = "A-10 Warthog"width = "300" height = "200">
+					<a target="_blank" href = "./assets/images/warthog.jpg">
+						<img src ="./assets/images/warthog.jpg" alt = "A-10 Warthog"width = "300" height = "200">
 					</a>
 					<div class "desc"><font color = "black">An A-10 Warthog, NICE</font></div>
 				</div>
 			</div>
 
 			<div class = "gallery">
-				<a target="_blank" href = "/assets/images/raptor.jpg">
-					<img src ="/assets/images/raptor.jpg" alt = "F-22 Raptor"width = "300" height = "200">
+				<a target="_blank" href = "./assets/images/raptor.jpg">
+					<img src ="./assets/images/raptor.jpg" alt = "F-22 Raptor"width = "300" height = "200">
 					<div class "desc"><font color = "black">An F-22 Raptor. Whoa!</font></div>
 				</a>
 			</div>
@@ -127,6 +125,28 @@
 				</div>
 			</div>
 		</div>
-		</div>
+		<!--wow shit -->
+
+		<!-- footer and contact form --> 
+		<div class=	"bio">
+			<div class = "row"> 
+				<div class = "col">
+					<p>Heres some text. contact us</p><br>
+					<p>666-666-6666</p>
+				</div>
+				<div class = "col">
+					<div class = "form-group">
+						<label for = "exampleInputEmail1">Email</label> 
+						    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+					</div>
+					<div class = "form-group">
+						<label for="exampleInputNumber1">Phone Number</label>
+						<input type="number" class="form-control" id="exampleInputNumber1" placeholder="xxx-xxx-xxxx">
+					</div>
+					<div class = "form-group">
+						<label for = "text area">What do you want to see?</label>
+						<textarea class = "form-control" id = "exampleTextArea" rows = "5"></textarea>
+					</div>
 	</body>
 </html> 

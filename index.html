@@ -17,10 +17,10 @@
 		<!-- free contact form stuff (consider buying license when get money) -->
 		<script src = "./assets/js/freecontactformvalidation.js"></script>
 		<script>
-		required.add('fullName', 'NOT_EMPTY' , 'Full Name');
-		required.add('email', 'EMAIL' , 'Email Address');
-		required.add('yourMessage', 'NOT_EMPTY' , 'Full Name');
-		required.add('antiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
+required.add('fullName', 'NOT_EMPTY' , 'Full Name');
+required.add('email', 'EMAIL' , 'Email Address');
+required.add('yourMessage', 'NOT_EMPTY' , 'Full Name');
+required.add('antiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 		</script>
 	</head>
 	<body bgcolor="white">
@@ -154,8 +154,8 @@
 	       <input type = "text" class = "form-control" id = "lastName">
 	       </div>-->
 	       <div class = "form-group">
-		       <label for = "exampleInputEmail1" class = "">Email</label> 
-		       <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+		       <label for = "email" class = "required">Email Address<span class="required_star">*</span></label> 
+		       <input type="email" class="form-control" id = "email" name ="email" aria-describedby="emailHelp" placeholder="Enter email">
 		       <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 	       </div>
 	       <div class = "form-group">
@@ -163,8 +163,21 @@
 		       <input type="number" class="form-control" id="exampleInputNumber1" placeholder="xxx-xxx-xxxx">
 	       </div>
 	       <div class = "form-group">
-		       <label for = "text area">What do you want to see?</label>
-		       <textarea class = "form-control" id = "exampleTextArea" rows = "5"></textarea>
+		       <label for = "yourMessage" class = "required">What do you want to see?<span class = "required_star">*</span></label>
+		       <textarea class = "form-control" id = "yourMessage" name = "yourMessage" rows = "5"></textarea>
 	       </div>
+	       <div class = "form-group">
+		       <div class = "antispammessage">To help prevent automated spam, please answer this question<br /><br />
+			       <span class = "required_star">*</span>
+			       Using only numbers, what is 10 plus 15? &nbsp;
+			       <input type = "text" name = "antiSpam" id = "antiSpam" maxlength = "100">
+		       </div>
+	       </div>
+						</form>
+						<input type = "submit" value = "Submit" style = "width:200px;height:40px">
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 </html> 

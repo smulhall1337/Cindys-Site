@@ -143,19 +143,20 @@ div.desc {
 
 /*my css*/
 .bio{
-	background-image:    linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/mountain.jpg");
+	background-image:    linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/skyline.jpg");
 	background-color:    #cccccc;
-	background-position: center;
+	background-position: center top;
 	padding-top: 250px;
 	padding-right: 130px;
 	padding-bottom: 250px;
 	padding-left: 180px;
-	font-family: Verdana;
+	font-family: Montserrat;
+	font-size: 18px;
 	color: white;
 }
 
-.bio{
-	background-image:    linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/mountain.jpg");
+.foot{
+	background-image:    linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/skyline.jpg");
 	background-color:    #cccccc;
 	background-position: center bottom;
 	padding-top: 150px;

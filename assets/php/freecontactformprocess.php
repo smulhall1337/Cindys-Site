@@ -22,7 +22,9 @@
 
 if(isset($_POST['Email_Address'])) {
 	
-	include 'freecontactformsettings.php';
+	//include 'freecontactformsettings.php';
+	$email_to = "smulhall1337@gmail.com";
+    $email_subject = "new contact";
 	
 	function died($error) {
 		echo "Sorry, but there were error(s) found with the form you submitted. ";

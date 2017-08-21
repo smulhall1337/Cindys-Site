@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<link rel="stylesheet" type="text/css" href="freecontactform.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		<script src="./assets/js/bootstrap.min.js"></script>
 		<!-- wow.js stuff -->
@@ -18,10 +19,10 @@
 		<!-- free contact form stuff (consider buying license when get money) -->
 		<script src = "./assets/js/freecontactformvalidation.js"></script>
 		<script>
-required.add('fullName', 'NOT_EMPTY' , 'Full Name');
-required.add('Email_Address', 'EMAIL' , 'Email_Address');
-required.add('yourMessage', 'NOT_EMPTY' , 'Full Name');
-required.add('antiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
+required.add('Full_Name', 'NOT_EMPTY' , 'Full Name');
+required.add('Email_Address', 'EMAIL' , 'Email Address');
+required.add('Your_Message', 'NOT_EMPTY' , 'Full Name');
+required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 		</script>
 	</head>
 	<body bgcolor="white">
@@ -150,12 +151,12 @@ required.add('antiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 				<div class = "col"><!--right-->
 					<form name = "contactform" method = "post" action = "./assets/php/freecontactformprocess.php" onsubmit = "return validate.check(this)">
 						<div class = "form-group">
-							<label for = "fullName" class = "required">Full Name<span class = "required_star">*</span></label>
-							<input type = "text" class = "form-control" id = "fullName" name = fullName maxlength = "80">
+							<label for = "Full_Name" class = "required">Full Name<span class = "required_star">*</span></label>
+							<input type = "text" class = "form-control" id = "Full_Name" name = Full_Name maxlength = "80">
 						</div>
 						<div class = "form-group">
-							<label for = "exampleInputEmail1" class = "">Email</label> 
-							<input type="Email_Address" class="form-control" id="Email_Address" aria-describedby="emailHelp" placeholder="Enter email">
+							<label for = "Email_Address" class = "required">Email</label> 
+							<input type="text" class="form-control" id="Email_Address" aria-describedby="emailHelp" placeholder="Enter email">
 							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 						</div>
 						<div class = "form-group">
@@ -163,14 +164,14 @@ required.add('antiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 							<input type="number" class="form-control" id="exampleInputNumber1" placeholder="xxx-xxx-xxxx">
 						</div>
 						<div class = "form-group">
-							<label for = "yourMessage" class = "required">What do you want to see?<span class = "required_star">*</span></label>
-							<textarea class = "form-control" id = "yourMessage" name = "yourMessage" rows = "5"></textarea>
+							<label for = "Your_Message" class = "required">What do you want to see?<span class = "required_star">*</span></label>
+							<textarea class = "form-control" id = "Your_Message" name = "Your_Message" rows = "5"></textarea>
 						</div>
 						<div class = "form-group">
 							<div class = "antispammessage">To help prevent automated spam, please answer this question<br /><br />
 								<span class = "required_star">*</span>
 								Using only numbers, what is 10 plus 15? &nbsp;
-								<input type = "text" name = "antiSpam" id = "antiSpam" maxlength = "100">
+								<input type = "text" name = "AntiSpam" id = "AntiSpam" maxlength = "100">
 							</div>
 						</div>
 					<input type = "submit" value = "Submit" style = "width:200px;height:40px">

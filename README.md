@@ -1,2 +1,6 @@
 # Cindys-Site
-Personal Website for a friend 
+Personal Website for a friend
+
+# Usage
+
+	$ make run

@@ -34,6 +34,10 @@ if(isset($_POST['Email_Address'])) {
 
 	echo "after first if";
 
+	error_reporting(E_ALL ^ E_NOTICE ^ E_DEPRECATED ^ E_STRICT);
+
+	set_include_path("." . PATH_SEPARATOR . ($UserDir = dirname($_SERVER['DOCUMENT_ROOT'])) . "/pear/php" . PATH_SEPARATOR . get_include_path());
+	require_once "Mail.php";
 	include 'freecontactformsettings.php';
 
 	function died($error) {
@@ -91,13 +95,31 @@ if(isset($_POST['Email_Address'])) {
 	$email_message .= "Telephone: ".clean_string($telephone)."\r\n";
 	$email_message .= "Message: ".clean_string($comments)."\r\n";
 
-	echo something;
+	//pear mail stuff
+	$host = "ssl://smtp.gmail.com";
+	$username = "smulhall1337@gmail.com";
+	$password = "Agnryfaice1337";
+	$port = "465";
+	$to = $host;
+	
+
+	echo "something";
+
 
 	$headers = 'From: '.$email_from."\r\n".
 		'Reply-To: '.$email_from."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
+	$smtip = Mail::factory('smtp', array('host' => $host, 'port' => $port, 'auth' => true, 'username' => $username, 'password' => $password));
+	$mail = $smtp->send($to, $headers, $email_message);
+	if (PEAR::isError($mail)) {
+		echo("<p>" . $mail->getMessage() . "</p>");
+	else {
+		echo ("<p> success!</p>");
+
+/*
 	mail($email_to, $email_subject, $email_message, $headers);
 	header("Location: $thankyou");
+ */
 ?>
 <script>location.replace('<?php echo $thankyou;?>')</script>
 

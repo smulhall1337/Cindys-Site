@@ -20,6 +20,7 @@
  * 
  */
 
+
 echo "before/n";
 ?>
 
@@ -29,6 +30,8 @@ echo "before/n";
 
 <?php
 
+include('Mail.php');
+include('Mail/mime.php');
 
 if(isset($_POST['Email_Address'])) {
 
@@ -50,7 +53,7 @@ if(isset($_POST['Email_Address'])) {
 
 	if(!isset($_POST['Full_Name']) ||
 		!isset($_POST['Email_Address']) ||
-		//!isset($_POST['Telephone_Number']) ||
+		!isset($_POST['Telephone_Number']) ||
 		!isset($_POST['Your_Message']) || 
 		!isset($_POST['AntiSpam'])		
 	) {
@@ -100,21 +103,31 @@ if(isset($_POST['Email_Address'])) {
 	$username = "smulhall1337@gmail.com";
 	$password = "Agnryfaice1337";
 	$port = "465";
-	$to = $host;
+	$to = "smulhall1337@gmail.com";
 	
 
-	echo "something";
+	
 
 
 	$headers = 'From: '.$email_from."\r\n".
 		'Reply-To: '.$email_from."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
+	
+	echo nl2br($to);
+	echo nl2br("<br />");
+	echo nl2br($headers);
+	echo nl2br("<br />");
+	echo nl2br($email_message);
+
 	$smtip = Mail::factory('smtp', array('host' => $host, 'port' => $port, 'auth' => true, 'username' => $username, 'password' => $password));
 	$mail = $smtp->send($to, $headers, $email_message);
 	if (PEAR::isError($mail)) {
 		echo("<p>" . $mail->getMessage() . "</p>");
+	}
 	else {
 		echo ("<p> success!</p>");
+	}
+
 
 /*
 	mail($email_to, $email_subject, $email_message, $headers);

@@ -106,35 +106,55 @@ if(isset($_POST['Email_Address'])) {
 	$to = "smulhall1337@gmail.com";
 	
 
+	$headers['From']    = $email_from;
+	$headers['To']      = "smulhall1337@gmail.com";
+	$headers['Subject'] = 'New Contact';
+	$params['sendmail_path'] = '/usr/lib/sendmail';
+
+	//create a mail object FIRST
+	$mail_object =& Mail::factory('sendmail', $params);
 	
-
-
+/*
 	$headers = 'From: '.$email_from."\r\n".
 		'Reply-To: '.$email_from."\r\n" .
 		'X-Mailer: PHP/' . phpversion();
-	
-	echo nl2br($to);
-	echo nl2br("<br />");
-	echo nl2br($headers);
-	echo nl2br("<br />");
-	echo nl2br($email_message);
+*/	
+	var_dump($to);
+	var_dump($headers);
+	var_dump($email_message);
 
 	$smtip = Mail::factory('smtp', array('host' => $host, 'port' => $port, 'auth' => true, 'username' => $username, 'password' => $password));
-	$mail = $smtp->send($to, $headers, $email_message);
+	//$mail = $smtp->send($to, $headers, $email_message);
+
+	$mail = $mail_object->send($to, $headers, $email_message);
+
+
+	if ($mail) {
+
+	echo "good!";
+
+	} else {
+
+	//code here will never actually be executed.
+
+	}
+
+	
+/*
 	if (PEAR::isError($mail)) {
 		echo("<p>" . $mail->getMessage() . "</p>");
 	}
 	else {
 		echo ("<p> success!</p>");
 	}
-
+*/
 
 /*
 	mail($email_to, $email_subject, $email_message, $headers);
 	header("Location: $thankyou");
  */
 ?>
-<script>location.replace('<?php echo $thankyou;?>')</script>
+<script>//location.replace('<?php echo $thankyou;?>')</script>
 
 <?php
 }

@@ -3,6 +3,10 @@
 	/*background-color: #333;*/
 	background: rgba (0,0,0,0.5);
 	overflow: hidden;
+	position: absolute;
+	float: left;
+	top: 0;
+	margin-bottom: 50px;
 }
 
 /* Style the links inside the navigation bar */
@@ -30,7 +34,7 @@
 
 /* make a big background for a portion of a page */
 .bg-1 {
-	background-color: #33C7FF;
+	background-color: rgb(90,90,90);
 	color: white;
 	padding-top: 50px;
 	padding-right: 30px;
@@ -166,6 +170,18 @@ div.desc {
 	font-family: Verdana;
 	color: white;
 }
+
+h1.intro{
+	/*extra padding for the intro header*/
+	padding: 2cm;
+	font: 50;
+}
+
+img.showoff{
+	width: 100%;
+    height: auto;
+}
+	
 	
 
 	

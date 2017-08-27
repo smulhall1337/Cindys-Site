@@ -28,16 +28,19 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 	<body bgcolor="white">
 
 		<!-- top nav bar -->
+		
 		<div class = "bio wow fadeIn" data-wow-duration="4s"> 
 			<div class="topnav" id="myTopnav">
-				<a href="#home">Home</a>
-				<a href="#news">News</a>
-				<a href="#contact">Contact</a>
-				<a href="#About">Whatever</a>
+				<div class = "row">
+						<a href="#home">Home</a>
+						<a href="#news">News</a>
+						<a href="#contact">Contact</a>
+						<a href="#About">Whatever</a>
+				</div>
 			</div>
 
 			<!-- header -->
-			<center><h1>Cindy Ngos it all</h1></center>
+			<center><h1 class = "intro">Cindy Ngos it all</h1></center>
 
 			<!-- /header -->
 
@@ -64,11 +67,32 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 		<div class = "bg-1"> 
 			<div class = "container-fluid text-center">
 				<p><font face = "helvetica" size = "18">Here you can show off some pictures of places. maybe have something like "we specialize in blah blah blah..."</font></p>
-				<img src="./assets/images/tech.jpg" class = "img-circle" alt = "tech"  width="350" height="350">
+				<!-- <img src="./assets/images/tech.jpg" class = "img-circle" alt = "tech"  width="350" height="350"> -->
 				<div class="row">
-					<div class="col-sm-4">a grid for pictures</div>
-					<div class="col-sm-4">this can have more </div>
-					<div class="col-sm-4">or less columns</div>
+					<div class="col-sm-4">
+						<div class = "thumbnail">
+							<img src = "./assets/images/Saloon.jpg" alt = "Saloon" class="img-responsive showoff" width="460" height="345" >
+								<div class = "caption">
+									<p> Lorem Ipsum </p>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class = "thumbnail">
+							<img src = "./assets/images/tech.jpg" alt = "tech" class="img-responsive showoff" width="460" height="345">
+								<div class = "caption">
+									<p> Lorem Ipsum </p>
+								</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+					<div class = "thumbnail">
+							<img src = "./assets/images/outdoor.jpg" alt = "outdoor" class="img-responsive showoff" width="460" height="400">
+								<div class = "caption">
+									<p> Lorem Ipsum </p>
+								</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

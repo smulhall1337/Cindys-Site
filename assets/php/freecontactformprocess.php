@@ -123,7 +123,7 @@ if(isset($_POST['Email_Address'])) {
 	var_dump($headers);
 	var_dump($email_message);
 
-	$smtip = Mail::factory('smtp', array('host' => $host, 'port' => $port, 'auth' => true, 'username' => $username, 'password' => $password));
+	//$smtip = Mail::factory('smtp', array('host' => $host, 'port' => $port, 'auth' => true, 'username' => $username, 'password' => $password));
 	//$mail = $smtp->send($to, $headers, $email_message);
 
 	$mail = $mail_object->send($to, $headers, $email_message);

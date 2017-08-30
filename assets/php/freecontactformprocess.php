@@ -26,13 +26,14 @@ echo "before/n";
 
 <pre>
 <?php var_dump($_POST); ?>
+<?php var_dump($_SERVER); ?>
 </pre>
 
 <?php
 
 include('Mail.php');
 include('Mail/mime.php');
-if (isset($_SERVER['HTTP_X_REQUESTED_WITH')) {
+if (isset($_SERVER['HTTP_X_REQUESTED_WITH'])) {
 	
 	if(isset($_POST['Email_Address'])) {
 

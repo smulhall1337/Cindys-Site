@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="freecontactform.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		<script src="./assets/js/bootstrap.min.js"></script>
+		<script src="./assets/js/formsubmit.js"></script>
 		<!-- wow.js stuff -->
 		<script src="./assets/js/wow/wow.min.js"></script>
 		<link rel ="stylesheet" type="text/css" href="./assets/css/animate.css"/>
@@ -173,7 +174,7 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 					<p>666-666-6666</p>
 				</div>
 				<div class = "col"><!--right-->
-					<form name = "contactform" method = "post" action = "./assets/php/freecontactformprocess.php" onsubmit = "return validate.check(this)">
+					<form name = "contactform" method = "post" action = "" onsubmit = "return validate.check(this)">
 						<div class = "form-group">
 							<label for = "Full_Name" class = "required">Full Name<span class = "required_star">*</span></label>
 							<input type = "text" class = "form-control" id = "Full_Name" name = Full_Name maxlength = "80">

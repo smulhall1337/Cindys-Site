@@ -12,6 +12,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 		<script src="./assets/js/bootstrap.min.js"></script>
 		<script src="./assets/js/formsubmit.js"></script>
+		<script src="./assets/js/modal.js"></script>
 		<!-- wow.js stuff -->
 		<script src="./assets/js/wow/wow.min.js"></script>
 		<link rel ="stylesheet" type="text/css" href="./assets/css/animate.css"/>
@@ -29,14 +30,14 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 	<body bgcolor="white">
 
 		<!-- top nav bar -->
-		
+
 		<div class = "bio wow fadeIn" data-wow-duration="4s"> 
 			<div class="topnav" id="myTopnav">
 				<div class = "row">
-						<a href="#home">Home</a>
-						<a href="#news">News</a>
-						<a href="#contact">Contact</a>
-						<a href="#About">Whatever</a>
+					<a href="#home">Home</a>
+					<a href="#news">News</a>
+					<a href="#contact">Contact</a>
+					<a href="#About">Whatever</a>
 				</div>
 			</div>
 
@@ -73,25 +74,25 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 					<div class="col-sm-4">
 						<div class = "thumbnail">
 							<img src = "./assets/images/Saloon.jpg" alt = "Saloon" class="img-responsive showoff" width="460" height="345" >
-								<div class = "caption">
-									<p> Lorem Ipsum </p>
-								</div>
+							<div class = "caption">
+								<p> Lorem Ipsum </p>
+							</div>
 						</div>
 					</div>
 					<div class="col-sm-4">
 						<div class = "thumbnail">
 							<img src = "./assets/images/tech.jpg" alt = "tech" class="img-responsive showoff" width="460" height="345">
-								<div class = "caption">
-									<p> Lorem Ipsum </p>
-								</div>
+							<div class = "caption">
+								<p> Lorem Ipsum </p>
+							</div>
 						</div>
 					</div>
 					<div class="col-sm-4">
-					<div class = "thumbnail">
+						<div class = "thumbnail">
 							<img src = "./assets/images/outdoor.jpg" alt = "outdoor" class="img-responsive showoff" width="460" height="400">
-								<div class = "caption">
-									<p> Lorem Ipsum </p>
-								</div>
+							<div class = "caption">
+								<p> Lorem Ipsum </p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -112,35 +113,78 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 		</div>
 
 		<!-- image gallery -->
+		<!-- TODO: Give full light box functionality. -->
 		<div class = "bg-3">
 			<div class = "container-fluid text-center">
-				<p><font face = "Sofia" size = "18"> this should be some crazy font from google <br> theres like 300 more to choose from<br> also check out this responsize image gallery 
+				<p><font face = "Sofia" size = "18"> this should be some crazy font from google <br> theres like 300 more to choose from<br> also check out this modal image gallery 
 				</font>
 				</p>
-				<div class = "responsive">
-					<div class = "gallery">
-						<a target="_blank" href = "./assets/images/falcon.jpg">
-							<img src ="./assets/images/falcon.jpg" alt = "F-16 Falcon" width = "300" height = "200">
-						</a>
-						<div class "desc"><font color = "black">An F16 falcon, sick</font></div>
+				<!-- CSS: See modal stuff, line 1877 in web.css-->
+				<div class = "row center">
+					<div class = "col">
+						<div class = "gallery">
+								<img src ="./assets/images/falcon.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(1)" alt = "F-16 Falcon" width="460" height="400">
+							<div class "desc"><font color = "black">An F16 falcon, sick</font></div>
+						</div>
+					</div>
+
+					<div class = "col">
+						<div class = "gallery">
+								<img src ="./assets/images/warthog.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(2)" alt = "A-10 Warthog" width="460" height="400">
+							<div class "desc"><font color = "black">An A-10 Warthog, NICE</font></div>
+						</div>
+					</div>
+					
+					<div class = "col">
+						<div class = "gallery">
+								<img src ="./assets/images/raptor.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(3)" alt = "F-22 Raptor" width="460" height="400">
+								<div class "desc"><font color = "black">An F-22 Raptor. Whoa!</font></div>
+						</div>
 					</div>
 				</div>
+				
+				<div id="myModal" class="modal">
+					<span class="close cursor" onclick="closeModal()">&times;</span>
+					<div class="modal-content">
 
-				<div class = "gallery">
-					<a target="_blank" href = "./assets/images/warthog.jpg">
-						<img src ="./assets/images/warthog.jpg" alt = "A-10 Warthog"width = "300" height = "200">
-					</a>
-					<div class "desc"><font color = "black">An A-10 Warthog, NICE</font></div>
+						<div class="mySlides">
+							<div class="numbertext">1 / 3</div>
+							<img src ="./assets/images/falcon.jpg"style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">2 / 3</div>
+							<img src ="./assets/images/warthog.jpg" style="width:100%">
+						</div>
+
+						<div class="mySlides">
+							<div class="numbertext">3 / 3</div>
+							<img src ="./assets/images/raptor.jpg" style="width:100%">
+						</div>
+
+
+						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+						<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+						<div class="caption-container">
+							<p id="caption"></p>
+						</div>
+
+
+						<div class="column">
+							<img class="demo cursor" src="./assets/images/falcon.jpg" style="width:100%" onclick="currentSlide(1)" alt="F-16 Falcon">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="./assets/images/warthog.jpg" style="width:100%" onclick="currentSlide(2)" alt="A-10 Warthog">
+						</div>
+						<div class="column">
+							<img class="demo cursor" src="./assets/images/raptor.jpg" style="width:100%" onclick="currentSlide(3)" alt="F-22 Raptor">
+						</div>
+						
+					</div>
 				</div>
+				<div class = "clearfix"></div>
 			</div>
-
-			<div class = "gallery">
-				<a target="_blank" href = "./assets/images/raptor.jpg">
-					<img src ="./assets/images/raptor.jpg" alt = "F-22 Raptor"width = "300" height = "200">
-					<div class "desc"><font color = "black">An F-22 Raptor. Whoa!</font></div>
-				</a>
-			</div>
-			<div class = "clearfix"></div>
 		</div>
 
 
@@ -199,7 +243,7 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 								<input type = "text" name = "AntiSpam" id = "AntiSpam" maxlength = "100">
 							</div>
 						</div>
-					<input type = "submit" value = "Submit" style = "width:200px;height:40px">
+						<input type = "submit" value = "Submit" style = "width:200px;height:40px">
 					</form>
 				</div>
 			</div>

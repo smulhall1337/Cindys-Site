@@ -1,3 +1,4 @@
+/* used for giving the image gallery a lightbox effect*/
 function openModal() {
   document.getElementById('myModal').style.display = "block";
 }

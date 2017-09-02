@@ -6,7 +6,6 @@ function openModal() {
 function closeModal() {
   document.getElementById('myModal').style.display = "none";
 }
-
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -18,7 +17,7 @@ function currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
-function showSlides(n) {
+ function showSlides(n) {
   var i;
   var slides = document.getElementsByClassName("mySlides");
   var dots = document.getElementsByClassName("demo");
@@ -35,3 +34,4 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+

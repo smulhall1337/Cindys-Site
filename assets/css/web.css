@@ -161,6 +161,12 @@ img.showoff{
     height: auto;
 }
 
+ul{
+	position: relative;
+	display: inline-block;
+    text-align:left;
+}
+
 
 /*******************************for the image gallery*******************************/
 div.gallery {

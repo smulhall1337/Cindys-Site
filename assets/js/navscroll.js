@@ -19,10 +19,10 @@ $(document).ready(function() {
     }
 	//change text color 
 	//maybe find a better way to do this...
-	if ($(window).scrollTop() >= 1479) {
+	if ($(window).scrollTop() >= 1485) {
       document.getElementsByClassName("topnav")[0].style.background = "black"
     }
-	if ($(window).scrollTop() < 1479 || $(window).scrollTop() >= 2014 ) {
+	if ($(window).scrollTop() < 1485 || $(window).scrollTop() >= 2014 ) {
       document.getElementsByClassName("topnav")[0].style.background = "none";
 	}
 	

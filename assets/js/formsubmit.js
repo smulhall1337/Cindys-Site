@@ -1,4 +1,6 @@
-/* ajax contact form submission*/
+/* 
+*ajax contact form submission
+*/
 $(document).ready(function() {
   var form = $('#contactform'); // contact form
   var submit = $('#Submit');  // submit button

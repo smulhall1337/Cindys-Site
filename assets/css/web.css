@@ -1,3 +1,5 @@
+
+/*******************************NavBar*******************************/
 /* Add a black background color to the top navigation */
 .topnav {
 	/*background-color: #333;*/
@@ -19,7 +21,6 @@
 	text-decoration: none;
 	font-size: 17px;
 }
-
 /* Change the color of links on hover */
 .topnav a:hover {
 	background-color: #ddd;
@@ -31,7 +32,15 @@
 	background-color: #4CAF50;
 	color: white;
 }
+/* used for making the navbar stick when scrolling*/
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+	position: fixed;
+    width: 100%;
+} 
 
+/*******************************blocks*******************************/
 /* make a big background for a portion of a page */
 .bg-1 {
 	background-color: rgb(90,90,90);
@@ -61,11 +70,6 @@
 	padding-bottom: 50px;
 	padding-left: 80px;
 }
-
-/*playing around with some fonts*/
-
-
-	
 
 
 /*a rounded button*/
@@ -124,7 +128,7 @@
     clear: both;
 }
 
-/*******************************my css*******************************/
+/*******************************etc css*******************************/
 .bio{
 	background-image:    linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/skyline.jpg");
 	background-color:    #cccccc;

@@ -1,6 +1,7 @@
 /*
 *adds smoothscroll effect
 */
+//TODO: fix that jumping thing it does when it scrolls to a div
 $(document).ready(function () {
      $('a[href^="#"]').on('click', function (e) {
          e.preventDefault();

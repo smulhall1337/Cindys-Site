@@ -41,8 +41,11 @@
     z-index: 100;
 	position: fixed;
     width: 100%;
+    background: rgba(0,0,0,0.6);
 } 
-
+/*
+*TODO: Implement shrinking navbar. example at https://codepen.io/devotiongeo/pen/xiphD
+*/
 #toTop img {
   width: 50px;
 }

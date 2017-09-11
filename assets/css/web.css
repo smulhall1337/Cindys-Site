@@ -3,16 +3,18 @@
 /* Add a black background color to the top navigation */
 .topnav {
 	/*background-color: #333;*/
-	background: rgba (0,0,0,0.5);
+	background: rgba(0,0,0,0.6);
 	overflow: hidden;
 	position: absolute;
 	float: left;
 	top: 0;
 	margin-bottom: 50px;
+  z-index: 1;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
+  background: inherit;
 	float: left;
 	display: block;
 	color: #f2f2f2;
@@ -20,6 +22,7 @@
 	padding: 14px 16px;
 	text-decoration: none;
 	font-size: 17px;
+  -webkit-transition: all .3s ease-in;
 }
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -39,6 +42,41 @@
 	position: fixed;
     width: 100%;
 } 
+
+#toTop img {
+  width: 50px;
+}
+#toTop img:hover {
+  cursor: pointer;
+}
+.topnav img {
+  z-index: 1000;
+  height: 2.5em;
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  transition: all 0.5s linear;
+}
+
+.move {
+  top: -60px;
+}
+
+.topnav span {
+  position: absolute;
+  left: 40px;
+  top: 10px;
+  font-weight: bold;
+  transition: all 0.5s ease-in;
+}
+
+.movetext {
+  top: -30px;
+}
+
+.small {
+  padding: .5em 1em;
+}
 
 /*******************************blocks*******************************/
 /* make a big background for a portion of a page */

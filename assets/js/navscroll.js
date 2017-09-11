@@ -23,7 +23,7 @@ $(document).ready(function() {
       document.getElementsByClassName("topnav")[0].style.background = "black"
     }
 	if ($(window).scrollTop() < 1485 || $(window).scrollTop() >= 2014 ) {
-      document.getElementsByClassName("topnav")[0].style.background = "none";
+      document.getElementsByClassName("topnav")[0].style.background = "rgba(0,0,0,0.6)";
 	}
 	
   });

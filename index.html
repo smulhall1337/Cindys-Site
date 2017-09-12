@@ -32,38 +32,29 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 	<body bgcolor="white">
 
 		<!-- top nav bar -->
-		<!-- TODO: Add smooth scroll effect -->
-		<div class = "bio wow fadeIn" data-wow-duration="4s"> 
-			<div class="topnav" id="myTopnav">
-				<div class = "row">
+		<div class="topnav wow fadeIn" data-wow-duration="4s" id="myTopnav">
+			<div class = "row">
+				<a href="#home">Home</a>
+				<a href="#news">News</a>
+				<a href="#button">button</a>
+				<a href="#gallery">image gallery</a>
+				<a href="#wow">Wow!</a>
+				<a href="#contact">Contact</a> 
 				<div class = "col">
-					<a href="#home">Home</a>
-					</div>
-					<div class = "col">
-					<a href="#news">News</a>
-					</div>
-					<div class = "col">
-					<a href="#button">button</a>
-					</div>
-					<div class = "col">
-					<a href="#gallery">image gallery</a>
-					</div>
-					<div class = "col">
-					<a href="#wow">Wow!</a>
-					</div>
-					<div class = "col">
-					<a href="#contact">Contact</a>
-					</div>
+				<a href="https://www.facebook.com/steakstyles"> <img src = "http://www.iconsdb.com/icons/preview/white/facebook-xxl.png"</img> </a>
 				</div>
 			</div>
-
+		</div>
+		
+		
+		<div class = "bio wow fadeIn" data-wow-duration="4s"> 
 			<!-- header -->
 			<center><h1 class = "intro">Cindy Ngos it all</h1></center>
 
 			<!-- /header -->
 
 			<!-- intro paragraph --> 
-			<div class = "container" id = "home">
+			<div class = "container wow fadeIn" data-wow-duration="4s" id = "home">
 				<div class = "row">
 					<div class = "col-md-12">
 						This could be an intro paragraph. explain what you do, but be brief. this is in size 18 Montserrat		ca.<b>This sentence will be bold.</B></font></p>
@@ -128,7 +119,7 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 			</div>
 		</div>
 
-		
+
 		<!-- image gallery -->
 		<div class = "bg-3" id = "gallery">
 			<div class = "container-fluid text-center">
@@ -139,27 +130,27 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 				<div class = "row center">
 					<div class = "col">
 						<div class = "gallery">
-								<img src ="./assets/images/falcon.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(1)" alt = "F-16 Falcon" width="460" height="400">
+							<img src ="./assets/images/falcon.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(1)" alt = "F-16 Falcon" width="460" height="400">
 							<div class "desc"><font color = "black">An F16 falcon, sick</font></div>
 						</div>
 					</div>
 
 					<div class = "col">
 						<div class = "gallery">
-								<img src ="./assets/images/warthog.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(2)" alt = "A-10 Warthog" width="460" height="400">
+							<img src ="./assets/images/warthog.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(2)" alt = "A-10 Warthog" width="460" height="400">
 							<div class "desc"><font color = "black">An A-10 Warthog, NICE</font></div>
 						</div>
 					</div>
-					
+
 					<div class = "col">
 						<div class = "gallery">
-								<img src ="./assets/images/raptor.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(3)" alt = "F-22 Raptor" width="460" height="400">
-								<div class "desc"><font color = "black">An F-22 Raptor. Whoa!</font></div>
+							<img src ="./assets/images/raptor.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(3)" alt = "F-22 Raptor" width="460" height="400">
+							<div class "desc"><font color = "black">An F-22 Raptor. Whoa!</font></div>
 						</div>
 					</div>
 				</div>
 				<div id="myModal" class="modal">
-				
+
 					<span class="close cursor" onclick="closeModal()">&times;</span>
 					<div class="modal-content">
 

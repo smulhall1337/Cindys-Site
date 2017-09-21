@@ -1,0 +1,156 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+
+$redish: #D72626;
+$white: #E1E1E1;
+$black: #333;
+$cubic: cubic-bezier(.55,0,.1,1);
+
+body {
+  padding: 0;
+  margin: 0;
+  background: $white;
+  color: $black;
+}
+
+.fixedHead {
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: relative;
+  background-image: url(http://www.socwall.com/images/wallpapers/44489-1920x1080.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% -215px;
+  z-index: 100;
+}
+
+.shadower {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: $redish;
+  opacity: 0;
+  z-index: 15;
+}
+
+.falseHeader {
+  background: $redish;
+  display: block;
+  position: relative;
+  top: 500px;
+  height: 100px;
+  width: 100%;
+  z-index: 10;
+  transition: height 0.2s $cubic;
+}
+
+.clipped {
+  position: fixed;
+  top: 0;
+  height: 75px;
+  .headerUp {
+    transform: translateY(-100px);
+  }
+  .menu {
+    line-height: 75px;
+  }
+}
+
+.menuContainer {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  z-index: 10;
+}
+
+.menu {
+  line-height: 100px;
+  transition: all 0.2s $cubic;
+  & ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    & li {
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: center;
+      width: 25%;
+      font-family: roboto;
+      color: $white;
+      font-size: 25px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer;
+      &:hover {
+        background: #fff;
+        color: $redish;
+      }
+    }
+  }
+}
+
+.menu > ul > li {
+  .subChoices {
+    transform: translateY(-25%);
+    cursor-event: none;
+    width: 200px;
+    position: absolute;
+    box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+    transition: all 0.25s $cubic;
+    opacity: 0;
+    & li {
+      font-size: 15px;
+      line-height: 60px;
+      display: block;
+      width: 100%;
+      color: $redish;
+      background: #fff;
+      &:hover {
+        background: $redish;
+        color: $white;
+      }
+    }
+  }
+  &:hover  {
+    .subChoices {
+      transform: translate(0);
+      opacity: 1;
+    }
+  }
+}
+
+.menu .current {
+  background: #fff;
+  color: $redish;
+  .subChoices {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+
+.container {
+  display: block;
+  position: relative;
+  width: 800px;
+  margin: 100px auto;
+  text-align: center;
+  font-family: roboto;
+  & iframe {
+    width: 800px;
+    height: 450px;
+    margin-bottom: 75px;
+  }
+}
+
+#firstSect .container{
+  margin-top: 200px;
+  & h1 {
+    font-size: 30px;
+  }
+}
+
+#mainTitle {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}

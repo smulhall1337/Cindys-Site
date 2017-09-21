@@ -1,0 +1,125 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,500,700);
+body {
+  padding: 0;
+  margin: 0;
+  background: #E1E1E1;
+  color: #333; }
+
+.fixedHead {
+  width: 100%;
+  height: 500px;
+  display: block;
+  position: relative;
+  background-image: url(http://www.socwall.com/images/wallpapers/44489-1920x1080.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 50% -215px;
+  z-index: 100; }
+
+.shadower {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #D72626;
+  opacity: 0;
+  z-index: 15; }
+
+.falseHeader {
+  background: #D72626;
+  display: block;
+  position: relative;
+  top: 500px;
+  height: 100px;
+  width: 100%;
+  z-index: 10;
+  transition: height 0.2s cubic-bezier(0.55, 0, 0.1, 1); }
+
+.clipped {
+  position: fixed;
+  top: 0;
+  height: 75px; }
+  .clipped .headerUp {
+    transform: translateY(-100px); }
+  .clipped .menu {
+    line-height: 75px; }
+
+.menuContainer {
+  display: block;
+  width: 800px;
+  margin: 0 auto;
+  z-index: 10; }
+
+.menu {
+  line-height: 100px;
+  transition: all 0.2s cubic-bezier(0.55, 0, 0.1, 1); }
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0; }
+    .menu ul li {
+      display: inline-block;
+      box-sizing: border-box;
+      text-align: center;
+      width: 25%;
+      font-family: roboto;
+      color: #E1E1E1;
+      font-size: 25px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      cursor: pointer; }
+      .menu ul li:hover {
+        background: #fff;
+        color: #D72626; }
+
+.menu > ul > li .subChoices {
+  transform: translateY(-25%);
+  cursor-event: none;
+  width: 200px;
+  position: absolute;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.25s cubic-bezier(0.55, 0, 0.1, 1);
+  opacity: 0; }
+  .menu > ul > li .subChoices li {
+    font-size: 15px;
+    line-height: 60px;
+    display: block;
+    width: 100%;
+    color: #D72626;
+    background: #fff; }
+    .menu > ul > li .subChoices li:hover {
+      background: #D72626;
+      color: #E1E1E1; }
+.menu > ul > li:hover .subChoices {
+  transform: translate(0);
+  opacity: 1; }
+
+.menu .current {
+  background: #fff;
+  color: #D72626; }
+  .menu .current .subChoices {
+    transform: translate(0);
+    opacity: 1; }
+
+.container {
+  display: block;
+  position: relative;
+  width: 800px;
+  margin: 100px auto;
+  text-align: center;
+  font-family: roboto; }
+  .container iframe {
+    width: 800px;
+    height: 450px;
+    margin-bottom: 75px; }
+
+#firstSect .container {
+  margin-top: 200px; }
+  #firstSect .container h1 {
+    font-size: 30px; }
+
+#mainTitle {
+  text-transform: uppercase;
+  letter-spacing: 2px; }
+
+/*# sourceMappingURL=web.cc.map */

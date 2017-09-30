@@ -1,5 +1,5 @@
-# Cindys-Site
-Personal Website for a friend
+# Site-Template
+A site template to be used for many people
 
 # Usage
 

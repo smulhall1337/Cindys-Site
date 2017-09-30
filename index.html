@@ -5,133 +5,137 @@
 		<title>Material Design/Parallax Header</title>
 		<link rel="stylesheet" href="./assets/css/web.css">
 		<script src="./assets/js/modal.js"></script>
+		<link rel="stylesheet" href="./assets/css/bootstrap.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<script src="./assets/js/wow/wow.min.js"></script>
+		<link rel ="stylesheet" type="text/css" href="./assets/css/animate.css"/>
 	</head>
 	<body>
-		<hrheader class="fixedHead">
+		<div class="wow fadeIn"  data-wow-duration="4s">
+			<hrheader class="fixedHead">
 
-		<div class="shadower"></div>
-		<div class="falseHeader">
-			<div class="menuContainer">
-				<div class="menu">
-					<ul>
-						<li class="current">home</li>
-						<li>products
-							<ul class="subChoices">
-								<li>sub choice</li>
-								<li>Sub choice</li>
-								<li>sub choice</li>
-							</ul>
-						</li>
-						<li>about</li>
-						<li>contact</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		</hrheader>
-		<section id="firstSect">
-			<div class="container">
-				<h1 id="mainTitle">Site 2.0</h1>
-				<!--<iframe src="https://www.youtube.com/embed/1rGcn2XGr48?rel=0&amp;amp;controls=1&amp;amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>-->
-				<h1>Lorem ipsum dolor sit amet.</h1>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis nesciunt, incidunt esse quibusdam possimus nobis, ipsum maxime laudantium vel, alias quaerat? Praesentium magnam fugiat quidem, dolore aperiam sed </p>
-				<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident beatae perspiciatis repudiandae commodi ducimus. Quasi quaerat obcaecati repellendus optio nostrum sed recusandae dolor pariatur eos eligendi illum est dele</p>
-			</div>
-		</section>
-
-		<section id="bio">
-			<div class = "container">
-				<center><h1>Cindy Ngos it all</h1></center>
-				<div class = "row">
-					<div class = "col-md-12">
-						This could be an intro paragraph. explain what you do, but be brief. this is in size 18 Montserrat		ca.<b>This sentence will be bold.</b></font></p>
-					This is my second paragraph. This one will be in all blue. <i>This sentence will be
-						in italics.</i></font></p>
-				<p>This is my third paragraph.<br>
-				<br>
-				But, I want this on a separate line.</p>
+			<div class="shadower"></div>
+			<div class="falseHeader">
+				<div class="menuContainer">
+					<div class="menu">
+						<ul>
+							<li class="current">home</li>
+							<li>products
+								<ul class="subChoices">
+									<li>sub choice</li>
+									<li>Sub choice</li>
+									<li>sub choice</li>
+								</ul>
+							</li>
+							<li>about</li>
+							<li>contact</li>
+						</ul>
 					</div>
 				</div>
 			</div>
+			</hrheader>
+			<section id="firstSect">
+				<div class="container">
+					<h1 id="mainTitle">Site 2.0</h1>
+					<iframe src="https://www.youtube.com/embed/1rGcn2XGr48?rel=0&amp;amp;controls=1&amp;amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+					<h1>Lorem ipsum dolor sit amet.</h1>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi omnis nesciunt, incidunt esse quibusdam possimus nobis, ipsum maxime laudantium vel, alias quaerat? Praesentium magnam fugiat quidem, dolore aperiam sed </p>
+					<p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident beatae perspiciatis repudiandae commodi ducimus. Quasi quaerat obcaecati repellendus optio nostrum sed recusandae dolor pariatur eos eligendi illum est dele</p>
+				</div>
 			</section>
-		</section>
 
-		<section id = "bio">
-			<div class = "container text-center">
-				<p><font face = "Sofia" size = "18"> this should be some crazy font from google <br> theres like 300 more to choose from<br> also check out this modal image gallery 
-				</font>
-				</p>
-				<!-- CSS: See modal stuff, line 1877 in web.css-->
-				<div class = "row center">
-					<div class = "col">
-						<div class = "gallery">
-							<img src ="./assets/images/falcon.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(1)" alt = "F-16 Falcon" width="460" height="400">
-							<div class "desc"><font color = "black">An F16 falcon, sick</font></div>
-						</div>
-					</div>
-
-					<div class = "col">
-						<div class = "gallery">
-							<img src ="./assets/images/warthog.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(2)" alt = "A-10 Warthog" width="460" height="400">
-							<div class "desc"><font color = "black">An A-10 Warthog, NICE</font></div>
-						</div>
-					</div>
-
-					<div class = "col">
-						<div class = "gallery">
-							<img src ="./assets/images/raptor.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(3)" alt = "F-22 Raptor" width="460" height="400">
-							<div class "desc"><font color = "black">An F-22 Raptor. Whoa!</font></div>
+			<section id="bio">
+				<div class = "container">
+					<center><h1>Cindy Ngos it all</h1></center>
+					<div class = "row">
+						<div class = "col-md-12">
+							This could be an intro paragraph. explain what you do, but be brief. this is in size 18 Montserrat		ca.<b>This sentence will be bold.</b></font></p>
+						This is my second paragraph. This one will be in all blue. <i>This sentence will be
+							in italics.</i></font></p>
+					<p>This is my third paragraph.<br>
+					<br>
+					But, I want this on a separate line.</p>
 						</div>
 					</div>
 				</div>
-				<div id="myModal" class="modal">
+			</section>
+			</section>
 
-					<span class="close cursor" onclick="closeModal()">&times;</span>
-					<div class="modal-content">
-
-						<div class="mySlides">
-							<div class="numbertext">1 / 3</div>
-							<img src ="./assets/images/falcon.jpg"style="width:100%">
-						</div>
-
-						<div class="mySlides">
-							<div class="numbertext">2 / 3</div>
-							<img src ="./assets/images/warthog.jpg" style="width:100%">
-						</div>
-
-						<div class="mySlides">
-							<div class="numbertext">3 / 3</div>
-							<img src ="./assets/images/raptor.jpg" style="width:100%">
-						</div>
-
-
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-						<div class="caption-container">
-							<p id="caption"></p>
-						</div>
-
-						<div class = "row" style="background-color:rgba(0, 0, 0, 1);">
-							<div class="col-md-4">
-								<img class="demo cursor" src="./assets/images/falcon.jpg" style="width:100%" onclick="currentSlide(1)" alt="F-16 Falcon">
+			<section id = "bio">
+				<div class = "container text-center">
+					<p><font face = "Sofia" size = "18"> this should be some crazy font from google <br> theres like 300 more to choose from<br> also check out this modal image gallery 
+					</font>
+					</p>
+					<!-- CSS: See modal stuff, line 1877 in web.css-->
+					<div class = "row center">
+						<div class = "col">
+							<div class = "gallery">
+								<img src ="./assets/images/falcon.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(1)" alt = "F-16 Falcon" width="460" height="400">
+								<div class "desc"><font color = "black">An F16 falcon, sick</font></div>
 							</div>
-							<div class="col-md-4">
-								<img class="demo cursor" src="./assets/images/warthog.jpg" style="width:100%" onclick="currentSlide(2)" alt="A-10 Warthog">
+						</div>
+
+						<div class = "col">
+							<div class = "gallery">
+								<img src ="./assets/images/warthog.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(2)" alt = "A-10 Warthog" width="460" height="400">
+								<div class "desc"><font color = "black">An A-10 Warthog, NICE</font></div>
 							</div>
-							<div class="col-md-4">
-								<img class="demo cursor" src="./assets/images/raptor.jpg" style="width:100%" onclick="currentSlide(3)" alt="F-22 Raptor">
+						</div>
+
+						<div class = "col">
+							<div class = "gallery">
+								<img src ="./assets/images/raptor.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(3)" alt = "F-22 Raptor" width="460" height="400">
+								<div class "desc"><font color = "black">An F-22 Raptor. Whoa!</font></div>
+							</div>
+						</div>
+					</div>
+					<div id="myModal" class="modal">
+
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+
+							<div class="mySlides">
+								<div class="numbertext">1 / 3</div>
+								<img src ="./assets/images/falcon.jpg"style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2 / 3</div>
+								<img src ="./assets/images/warthog.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">3 / 3</div>
+								<img src ="./assets/images/raptor.jpg" style="width:100%">
+							</div>
+
+
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<div class = "row" style="background-color:rgba(0, 0, 0, 1);">
+								<div class="col-md-4">
+									<img class="demo cursor" src="./assets/images/falcon.jpg" style="width:100%" onclick="currentSlide(1)" alt="F-16 Falcon">
+								</div>
+								<div class="col-md-4">
+									<img class="demo cursor" src="./assets/images/warthog.jpg" style="width:100%" onclick="currentSlide(2)" alt="A-10 Warthog">
+								</div>
+								<div class="col-md-4">
+									<img class="demo cursor" src="./assets/images/raptor.jpg" style="width:100%" onclick="currentSlide(3)" alt="F-22 Raptor">
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
-
-		<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-		<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-		<script  src="./assets/js/falseHeader.js"></script>
+			</section>
+		</div>
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+			<script  src="./assets/js/falseHeader.js"></script>
 	</body>
 </html>

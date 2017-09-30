@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css?family=Quattrocento');
 /*******************************NavBar*******************************/
 /* Add a black background color to the top navigation */
 .topnav {
@@ -173,14 +174,14 @@
 
 /*******************************etc css*******************************/
 .bio{
-	background-image:    linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/skyline.jpg");
-	background-color:    #cccccc;
-	background-position: center top;
-	padding-top: 250px;
+	/*background-image:    linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/skyline.jpg");
+	background-position: center top;*/
+  background-color:    #808080;
+	padding-top: 130px;
 	padding-right: 130px;
 	padding-bottom: 250px;
 	padding-left: 180px;
-	font-family: Montserrat;
+	font-family: Quattrocento;
 	font-size: 18px;
 	color: white;
 }

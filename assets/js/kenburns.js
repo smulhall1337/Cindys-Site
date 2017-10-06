@@ -8,11 +8,15 @@
  * We need to keep the class on two images at a time (the two that are involved with the transition).
  */
 
-(function(){
+ //note to self: 
+ //This wouldn't work out of the box, I had to add the 
+ //$(document).ready(function(){ portion to prevent this script from 
+ //running BEFORE the page was loaded. 
+$(document).ready(function(){
 
 // we set the 'fx' class on the first image when the page loads
   document.getElementById('slideshow').getElementsByTagName('img')[0].className = "fx";
-  
+ 
 // this calls the kenBurns function every 4 seconds
 // you can increase or decrease this value to get different effects
   window.setInterval(kenBurns, 6000);		

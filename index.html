@@ -37,208 +37,183 @@ required.add('AntiSpam', 'NOT_EMPTY' , 'Anti-Spam Question');
 		<div class="topnav" id="myTopnav">
 			<div class = "row">
 				<a href="#Home">Home</a>
-				<a href="#Bio">News</a>
+				<a href="#Bio">Bio</a>
 				<a href="#button">button</a>
 				<a href="#gallery">image gallery</a>
 				<a href="#wow">Wow!</a>
 				<a href="#contact">Contact</a> 
 				<div class = "col">
-				<a href="https://www.facebook.com/andrewgavincomposer/"> <img src = "http://www.iconsdb.com/icons/preview/white/facebook-xxl.png"</img> </a>
+					<a href="https://www.facebook.com/andrewgavincomposer/"> <img src = "http://www.iconsdb.com/icons/preview/white/facebook-xxl.png"</img> </a>
 				</div>
 			</div>
 		</div>
-		
-		
-		<div class = "bio wow fadeIn" data-wow-duration="4s""> 
-			<div class = "container" id = "home">
-			<!-- header -->
-			<div class = "row">
-			<h1 class = "intro">Andrew Gavin</h1>
-			<!-- /header -->
-			</div>
-			<!-- intro paragraph -->
+
+
+		<div class = "wow fadeIn" data-wow-duration="4s""> 
+			<div class = "bio" id = "home">
+				<!-- header -->
 				<div class = "row">
-					<div class = "column">
-						This could be an intro paragraph. explain what you do, but be brief. 
+					<h1 class = "intro">Andrew Gavin</h1>
+					<!-- /header -->
+				</div>
+				<!-- intro paragraph -->
+				<div class = "row">
+					<div class = "col-6">
+					This could be an intro paragraph. explain what you do, but be brief. 
 					</div>
-					<div class = "column">
-						<div class = "slideshow">
+					<div class = "col-6">
+						<div id = "slideshow">
+							<!--<img src="./assets/images/andrewCello.jpg">-->
 							<img src="./assets/images/andrewCello.jpg">
-							<img src="http://lorempixel.com/800/400/sports/">
-							<img src="http://lorempixel.com/800/400/city">
-						</div>
-				</div>
-			</div>
-		</div>
-		<!-- /intro -->
-
-		<!-- showoff -->
-		<div class = "bg-1" id = "news"> 
-			<div class = "container-fluid text-center">
-				<p><font face = "helvetica" size = "18">Here you can show off some pictures of places. maybe have something like "we specialize in blah blah blah..."</font></p>
-				<!-- <img src="./assets/images/tech.jpg" class = "img-circle" alt = "tech"  width="350" height="350"> -->
-				<div class="row">
-					<div class="col-sm-4">
-						<div class = "thumbnail">
-							<img src = "./assets/images/Saloon.jpg" alt = "Saloon" class="img-responsive showoff" width="460" height="345" >
-							<div class = "caption">
-								<p> Lorem Ipsum </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class = "thumbnail">
-							<img src = "./assets/images/tech.jpg" alt = "tech" class="img-responsive showoff" width="460" height="345">
-							<div class = "caption">
-								<p> Lorem Ipsum </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-4">
-						<div class = "thumbnail">
-							<img src = "./assets/images/outdoor.jpg" alt = "outdoor" class="img-responsive showoff" width="460" height="400">
-							<div class = "caption">
-								<p> Lorem Ipsum </p>
-							</div>
+							<img src="./assets/images/andrewBW.jpg">
+							<img src="./assets/images/basses.jpg">
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+			<!-- /intro -->
 
-		<!-- image gallery -->
-		<div class = "bg-3" id = "gallery">
-			<div class = "container-fluid text-center">
-				<p><font face = "Sofia" size = "18"> this should be some crazy font from google <br> theres like 300 more to choose from<br> also check out this modal image gallery 
-				</font>
-				</p>
-				<!-- CSS: See modal stuff, line 1877 in web.css-->
-				<div class = "row center">
+			<!-- longer bio -->
+			<div class = "bg-1" id = "Bio"> 
+
+					<img src = "./assets/images/andrewEating.jpg" align = left width = "100px" height = "100px"> 
+
+				Andrew Gaivin was born on Alderan
+			</div>
+
+			<!-- image gallery -->
+			<div class = "bg-3" id = "gallery">
+				<div class = "container-fluid text-center">
+					<p><font face = "Sofia" size = "18"> this should be some crazy font from google <br> theres like 300 more to choose from<br> also check out this modal image gallery 
+					</font>
+					</p>
+					<!-- CSS: See modal stuff, line 1877 in web.css-->
+					<div class = "row center">
+						<div class = "col">
+							<div class = "gallery">
+								<img src ="./assets/images/falcon.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(1)" alt = "F-16 Falcon" width="460" height="400">
+								<div class "desc"><font color = "black">An F16 falcon, sick</font></div>
+							</div>
+						</div>
+
+						<div class = "col">
+							<div class = "gallery">
+								<img src ="./assets/images/warthog.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(2)" alt = "A-10 Warthog" width="460" height="400">
+								<div class "desc"><font color = "black">An A-10 Warthog, NICE</font></div>
+							</div>
+						</div>
+
+						<div class = "col">
+							<div class = "gallery">
+								<img src ="./assets/images/raptor.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(3)" alt = "F-22 Raptor" width="460" height="400">
+								<div class "desc"><font color = "black">An F-22 Raptor. Whoa!</font></div>
+							</div>
+						</div>
+					</div>
+					<div id="myModal" class="modal">
+
+						<span class="close cursor" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+
+							<div class="mySlides">
+								<div class="numbertext">1 / 3</div>
+								<img src ="./assets/images/falcon.jpg"style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">2 / 3</div>
+								<img src ="./assets/images/warthog.jpg" style="width:100%">
+							</div>
+
+							<div class="mySlides">
+								<div class="numbertext">3 / 3</div>
+								<img src ="./assets/images/raptor.jpg" style="width:100%">
+							</div>
+
+
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+							<div class="caption-container">
+								<p id="caption"></p>
+							</div>
+
+							<div class = "row" style="background-color:rgba(0, 0, 0, 1);">
+								<div class="col-md-4">
+									<img class="demo cursor" src="./assets/images/falcon.jpg" style="width:100%" onclick="currentSlide(1)" alt="F-16 Falcon">
+								</div>
+								<div class="col-md-4">
+									<img class="demo cursor" src="./assets/images/warthog.jpg" style="width:100%" onclick="currentSlide(2)" alt="A-10 Warthog">
+								</div>
+								<div class="col-md-4">
+									<img class="demo cursor" src="./assets/images/raptor.jpg" style="width:100%" onclick="currentSlide(3)" alt="F-22 Raptor">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<!-- playing with some WOW and animate.css stuff-->
+			<!-- defenitely wanna look into this more -->
+			<!-- note: https://codepen.io/TimLamber/pen/dLxbF is awesome -->
+			<div class="bg-1 text-right wow bounceInRight" data-wow-duration="3s" id = "wow">
+				<div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
+					<div class="single_pakeg_text">
+						<div class="pakeg_title">
+							<h4>Animate.css goodies</h4>
+						</div>
+
+						<ul>
+							<li><span> hey this is cool </span></li>
+							<li> its called WoW </li>
+							<li> and its got like </li>
+							<li> a million more</li>
+							<li> of these stupid animations</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--wow shit -->
+
+			<!-- footer and contact form --> 
+			<div class=	"foot" id = "contact">
+				<div class = "row"><!--left--> 
 					<div class = "col">
-						<div class = "gallery">
-							<img src ="./assets/images/falcon.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(1)" alt = "F-16 Falcon" width="460" height="400">
-							<div class "desc"><font color = "black">An F16 falcon, sick</font></div>
-						</div>
+						<p>Heres some text. contact us</p><br>
+						<p>666-666-6666</p>
 					</div>
-
-					<div class = "col">
-						<div class = "gallery">
-							<img src ="./assets/images/warthog.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(2)" alt = "A-10 Warthog" width="460" height="400">
-							<div class "desc"><font color = "black">An A-10 Warthog, NICE</font></div>
-						</div>
-					</div>
-
-					<div class = "col">
-						<div class = "gallery">
-							<img src ="./assets/images/raptor.jpg"  class="hover-shadow cursor" onclick="openModal();currentSlide(3)" alt = "F-22 Raptor" width="460" height="400">
-							<div class "desc"><font color = "black">An F-22 Raptor. Whoa!</font></div>
-						</div>
-					</div>
-				</div>
-				<div id="myModal" class="modal">
-
-					<span class="close cursor" onclick="closeModal()">&times;</span>
-					<div class="modal-content">
-
-						<div class="mySlides">
-							<div class="numbertext">1 / 3</div>
-							<img src ="./assets/images/falcon.jpg"style="width:100%">
-						</div>
-
-						<div class="mySlides">
-							<div class="numbertext">2 / 3</div>
-							<img src ="./assets/images/warthog.jpg" style="width:100%">
-						</div>
-
-						<div class="mySlides">
-							<div class="numbertext">3 / 3</div>
-							<img src ="./assets/images/raptor.jpg" style="width:100%">
-						</div>
-
-
-						<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-						<a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-						<div class="caption-container">
-							<p id="caption"></p>
-						</div>
-
-						<div class = "row" style="background-color:rgba(0, 0, 0, 1);">
-							<div class="col-md-4">
-								<img class="demo cursor" src="./assets/images/falcon.jpg" style="width:100%" onclick="currentSlide(1)" alt="F-16 Falcon">
+					<div class = "col"><!--right-->
+						<form name = "contactform" method = "post" action = "" onsubmit = "return validate.check(this)">
+							<div class = "form-group">
+								<label for = "Full_Name" class = "required">Full Name<span class = "required_star">*</span></label>
+								<input type = "text" class = "form-control" id = "Full_Name" name = Full_Name maxlength = "80">
 							</div>
-							<div class="col-md-4">
-								<img class="demo cursor" src="./assets/images/warthog.jpg" style="width:100%" onclick="currentSlide(2)" alt="A-10 Warthog">
+							<div class = "form-group">
+								<label for = "Email_Address" class = "required">Email</label> 
+								<input type="text" class="form-control" id="Email_Address" name = "Email_Address" aria-describedby="emailHelp" placeholder="Enter email">
+								<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
 							</div>
-							<div class="col-md-4">
-								<img class="demo cursor" src="./assets/images/raptor.jpg" style="width:100%" onclick="currentSlide(3)" alt="F-22 Raptor">
+							<div class = "form-group">
+								<label for="Telephone_Number">Phone Number</label>
+								<input type="number" class="form-control" name = "Telephone_Number" id="exampleInputNumber1" placeholder="xxx-xxx-xxxx">
 							</div>
-						</div>
+							<div class = "form-group">
+								<label for = "Your_Message" class = "required">What do you want to see?<span class = "required_star">*</span></label>
+								<textarea class = "form-control" id = "Your_Message" name = "Your_Message" rows = "5"></textarea>
+							</div>
+							<div class = "form-group">
+								<div class = "antispammessage">To help prevent automated spam, please answer this question<br /><br />
+									<span class = "required_star">*</span>
+									Using only numbers, what is 10 plus 15? &nbsp;
+									<input type = "text" name = "AntiSpam" id = "AntiSpam" maxlength = "100">
+								</div>
+							</div>
+							<input type = "submit" value = "Submit" style = "width:200px;height:40px">
+						</form>
 					</div>
 				</div>
 			</div>
-		</div>
-
-
-		<!-- playing with some WOW and animate.css stuff-->
-		<!-- defenitely wanna look into this more -->
-		<!-- note: https://codepen.io/TimLamber/pen/dLxbF is awesome -->
-		<div class="bg-1 text-right wow bounceInRight" data-wow-duration="3s" id = "wow">
-			<div class="col-md-6 col-md-offset-6 col-sm-8 col-sm-offset-4">
-				<div class="single_pakeg_text">
-					<div class="pakeg_title">
-						<h4>Animate.css goodies</h4>
-					</div>
-
-					<ul>
-						<li><span> hey this is cool </span></li>
-						<li> its called WoW </li>
-						<li> and its got like </li>
-						<li> a million more</li>
-						<li> of these stupid animations</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<!--wow shit -->
-
-		<!-- footer and contact form --> 
-		<div class=	"foot" id = "contact">
-			<div class = "row"><!--left--> 
-				<div class = "col">
-					<p>Heres some text. contact us</p><br>
-					<p>666-666-6666</p>
-				</div>
-				<div class = "col"><!--right-->
-					<form name = "contactform" method = "post" action = "" onsubmit = "return validate.check(this)">
-						<div class = "form-group">
-							<label for = "Full_Name" class = "required">Full Name<span class = "required_star">*</span></label>
-							<input type = "text" class = "form-control" id = "Full_Name" name = Full_Name maxlength = "80">
-						</div>
-						<div class = "form-group">
-							<label for = "Email_Address" class = "required">Email</label> 
-							<input type="text" class="form-control" id="Email_Address" name = "Email_Address" aria-describedby="emailHelp" placeholder="Enter email">
-							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-						</div>
-						<div class = "form-group">
-							<label for="Telephone_Number">Phone Number</label>
-							<input type="number" class="form-control" name = "Telephone_Number" id="exampleInputNumber1" placeholder="xxx-xxx-xxxx">
-						</div>
-						<div class = "form-group">
-							<label for = "Your_Message" class = "required">What do you want to see?<span class = "required_star">*</span></label>
-							<textarea class = "form-control" id = "Your_Message" name = "Your_Message" rows = "5"></textarea>
-						</div>
-						<div class = "form-group">
-							<div class = "antispammessage">To help prevent automated spam, please answer this question<br /><br />
-								<span class = "required_star">*</span>
-								Using only numbers, what is 10 plus 15? &nbsp;
-								<input type = "text" name = "AntiSpam" id = "AntiSpam" maxlength = "100">
-							</div>
-						</div>
-						<input type = "submit" value = "Submit" style = "width:200px;height:40px">
-					</form>
-				</div>
-			</div>
-		</div>
 	</body>
 </html> 
